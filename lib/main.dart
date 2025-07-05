@@ -1,5 +1,5 @@
 import 'package:evently_c15_offline_friday/cofig/theme/theme_manager.dart';
-import 'package:evently_c15_offline_friday/core/routres_manager/routes_manager.dart';
+import 'package:evently_c15_offline_friday/core/routes_manager/routes_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,7 +17,8 @@ class EventlyApp extends StatelessWidget {
       designSize: Size(393, 841),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
+      builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesManager.getRoute,
         initialRoute: RoutesManager.register,
         theme: ThemeManager.light,
@@ -25,6 +26,7 @@ class EventlyApp extends StatelessWidget {
         themeMode: ThemeMode.light,
         locale: Locale("en"),
       ),
+
     );
   }
 }
