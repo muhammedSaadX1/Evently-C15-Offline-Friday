@@ -21,9 +21,9 @@ class RegisterScreen extends StatelessWidget {
         padding:  EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
         child: SingleChildScrollView(
           child: Column(
-          
+
             children: [
-              Image.asset(ImageAssets.eventlyLogo),
+              Image.asset(ImageAssets.eventlyLogo, width: 120.w,height: 120.h,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -64,10 +64,10 @@ class RegisterScreen extends StatelessWidget {
                       },)
                     ],
                   )
-                          
+
                 ],
               )
-          
+
             ],
           ),
         ),
