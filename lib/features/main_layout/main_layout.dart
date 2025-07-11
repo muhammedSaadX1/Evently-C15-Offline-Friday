@@ -13,7 +13,7 @@ class LayoutScreen extends StatefulWidget {
 }
 
 class _LayoutScreenState extends State<LayoutScreen> {
-  final List<Widget> _tabs = const [
+  final List<Widget> _tabs =  [
     HomeTab(),
     MapsTab(),
     FavTab(),

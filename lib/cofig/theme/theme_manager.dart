@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class ThemeManager {
   static final ThemeData light = ThemeData(
+    primaryColor: ColorsManager.blue,
     useMaterial3: false,
     appBarTheme: AppBarTheme(
       scrolledUnderElevation: 0,
@@ -80,7 +81,38 @@ class ThemeManager {
           decoration: TextDecoration.underline,
         ),
       ),
+
     ),
+    iconTheme: IconThemeData(
+      color: ColorsManager.white
+    ),
+    cardTheme: CardTheme(
+      color: ColorsManager.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8.r)
+      ),
+    ),
+
+    textTheme:  TextTheme(
+      headlineSmall:  GoogleFonts.inter(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w400,
+        color: ColorsManager.white,
+      ),
+        headlineMedium: GoogleFonts.inter(
+          fontSize: 20.sp,
+          fontWeight: FontWeight.bold,
+          color: ColorsManager.blue,
+        ),
+
+        titleSmall: GoogleFonts.inter(
+          fontSize: 14.sp,
+          fontWeight: FontWeight.w400,
+          color: ColorsManager.blue,
+        ),
+      titleMedium:  GoogleFonts.inter(fontSize: 14.sp, color: ColorsManager.black, fontWeight: FontWeight.w500)
+
+    )
   );
   static final ThemeData dark = ThemeData();
 }
