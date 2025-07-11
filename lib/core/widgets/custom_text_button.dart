@@ -9,12 +9,11 @@ class CustomTextButton extends StatelessWidget {
   final String title;
   final VoidCallback onPressed;
 
+
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      // style: TextButton.styleFrom(
-      //   alignment: Alignment.centerRight
-      // ),
+
       onPressed: onPressed,
       child: Text(title),
     );

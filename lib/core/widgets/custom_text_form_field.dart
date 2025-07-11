@@ -8,15 +8,15 @@ class CustomTextFormField extends StatelessWidget {
   this.suffixIcon, this.keyboardType = TextInputType.text,
   });
   final IconData? prefixIcon;
-  final String labelText;
   final IconData? suffixIcon;
+  final String labelText;
   final TextInputType keyboardType;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       style: GoogleFonts.inter(fontSize: 16, color: ColorsManager.black, fontWeight: FontWeight.w400),
-      keyboardType: keyboardType,
+      keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         prefixIcon: prefixIcon != null ? Icon(prefixIcon) : null,
         suffixIcon: suffixIcon != null ? Icon(suffixIcon) : null,
